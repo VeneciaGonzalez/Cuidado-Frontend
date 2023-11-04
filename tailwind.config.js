@@ -7,12 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: '#2e1065',
+        'white': '#fafafa',
       },
     },
   },
+  important: true, //aqui le decimos a tenwil que todas sus clases sean important para que cuando agreguemos otras librerias talwin sobreescriba lo que asiganmos, es decir que talwin prevalezca la co figuracion de los colores que le estamos asignando
   plugins: [],
 }

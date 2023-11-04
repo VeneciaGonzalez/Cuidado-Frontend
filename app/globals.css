@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar {
+  width: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background: '#000';
+  border-radius: 10px;
+}
+ /* // se colocan los scroll para que no se vean las paginas cuando se inspeccione   */
+/* Morado más oscuro al pasar el mouse */
+
+.bg-purple-500 {
+  background-color: #800080; 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-purple-500:hover {
+  background-color: #4b004b; 
+}
+
+.bg-green-500 {
+  background-color: #008000; 
+}
+
+.bg-green-500:hover {
+  background-color: #004b00;
+}
+
+.bg-blue-500 {
+  background-color: #0000ff;
+}
+
+.bg-blue-500:hover {
+  background-color: #00004b; 
+}
+
+.enfermera-card {
+  border: 2px solid #5bdb34;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.agendar-button {
+  border: 2px solid #3c83e7;
+  background: rgba(60, 146, 231, 0.784);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enfermera-profesion {
+  font-weight: bold; /* Establece la profesión en negrita */
 }
